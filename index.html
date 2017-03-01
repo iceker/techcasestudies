@@ -10,7 +10,7 @@ custom_js:
   {% include search.html %}
   
   <ul id="container" class="post-list js-packery">
-    {% for post in site.posts %}
+    {% for post in site.pages %}
       <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}" id="{{ post.id | slugify }}">
         <div class="card">
           <div class="card-image {{ post.color }}">
