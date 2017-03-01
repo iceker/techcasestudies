@@ -9,8 +9,7 @@ custom_js:
   <input id="nav-trigger" class="nav-trigger" type="checkbox">
   {% include search.html %}
   
-  <ul id="container" class="post-list js-packery"
-    data-packery-options='{ "itemSelector": ".item" }'>
+  <ul id="container" class="post-list js-packery">
     {% for post in site.posts %}
       <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}" id="{{ post.id | slugify }}">
         <div class="card">
